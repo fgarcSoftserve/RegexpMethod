@@ -19,26 +19,3 @@ Here's a breakdown of the provided regex:
 5. "(?=.*\\d)": This part uses positive lookahead assertions to check if the string contains at least one digit.
 6. "(?=.*[\\{}!"#$%&'()*+,-./:;<=>?@^_|~\[\]])": This part uses positive lookahead assertions to check if the string contains at least one special character (escaped properly).
 7. "[A-Za-z\\d\\{}!"#$%&'()*+,-./:;<=>?@^_|~\[\]]{1,"+maxLength+"}$": This part defines the character set that the string can contain and specifies a range of minimum and maximum length (represented by maxLength). The variable maxLength` should be defined before using this regex pattern.
-
-## Compile & Execute
-
-1. **Download the Git Repository:** Clone or download this Git repository to your local machine.
-2. **Navigate to the Project Directory:** Open your console or terminal and navigate to the project directory using the `cd` command:
-    ```bash
-   cd /path/to/your/project
-3. **Compile the Java Code:** Compile the Regexp.java file (the main class) using the javac command:
-   ```bash
-   javac Regexp.java
-   
-4. **Run the Program:** To validate custom text, run the Java program by executing the following command:
-    ```bash
-    java Regexp textToValidate 10
-   
-   1. Regexp is the compiled class file.
-   2. textToValidate is the custom text to check
-   3. 10 is the max length of the provided text that needs to match
-
-5.  **Return Value:** Upon validation, the program will return one of the following messages: 
-    ```bash
-    - "Match: true" - If the custom text match the specified criteria
-    - "Match: false" - If the custom text does not match the specified criteria
